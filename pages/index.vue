@@ -17,7 +17,6 @@
               :class="$style.check"
               type="checkbox"
               :value="id"
-              @click="show = !show"
             />
             <label>
               {{ todo }}
@@ -38,7 +37,6 @@
 export default {
   data: () => ({
     addlist: '',
-    show: false,
     list: [],
   }),
   computed: {
